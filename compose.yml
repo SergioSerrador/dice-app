@@ -1,0 +1,7 @@
+services:
+  dice-app:
+    build: .
+    environment:
+      - DICE_SIDES=${DICE_SIDES:-6}
+    ports:
+      - "8888:5000"
